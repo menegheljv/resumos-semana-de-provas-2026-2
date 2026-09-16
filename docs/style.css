@@ -27,13 +27,14 @@ main { padding: 64px 0 52px; }
 .subject-card h3 { min-height: 0; font-size: 28px; }
 .subject-title { color: var(--ink); text-decoration: none; }
 .subject-title:hover { color: var(--subject-color); }
-.subject-button { display: block; width: 100%; padding: 14px 16px; color: var(--ink); border: 1px solid var(--subject-color); background: rgba(255,255,255,.58); font-size: inherit; text-decoration: none; }
-.subject-button:hover { color: #fff; background: var(--subject-color); }
+.subject-button { display: block; width: 100%; padding: 14px 16px; color: #fff; border: 1px solid var(--subject-color); background: var(--subject-color); font-size: inherit; text-decoration: none; transition: filter .2s ease, box-shadow .2s ease; }
+.subject-button:hover { color: #fff; filter: brightness(.9); }
+.subject-button:focus-visible { outline: 3px solid var(--subject-color); outline-offset: 3px; }
 .subject-card > p { min-height: 0; margin: 13px 0 22px; color: var(--muted); font-size: 13px; }
-.accent-orange { --subject-color: var(--orange); --subject-bg: #ffe2d5; border-top: 5px solid var(--line); background: #fff; }
-.accent-purple { --subject-color: var(--purple); --subject-bg: #e9ddff; border-top: 5px solid var(--line); background: #fff; }
-.accent-blue { --subject-color: var(--blue); --subject-bg: #dceeff; border-top: 5px solid var(--line); background: #fff; }
-.accent-green { --subject-color: var(--green); --subject-bg: #d9f3e4; border-top: 5px solid var(--line); background: #fff; }
+.accent-orange { --subject-color: var(--orange); --subject-bg: #ffe2d5; background: #fff; }
+.accent-purple { --subject-color: var(--purple); --subject-bg: #e9ddff; background: #fff; }
+.accent-blue { --subject-color: var(--blue); --subject-bg: #dceeff; background: #fff; }
+.accent-green { --subject-color: var(--green); --subject-bg: #d9f3e4; background: #fff; }
 .subject-card .subject-title:hover, .detail-panel .source-link:hover { color: var(--subject-color); }
 .subject-hero.orange-hero { background: linear-gradient(135deg, #351b2b, #8d3564); }.subject-hero.purple-hero { background: linear-gradient(135deg, #1e1a27, #493572); }.subject-hero.blue-hero { background: linear-gradient(135deg, #18232e, #28567f); }.subject-hero.green-hero { background: linear-gradient(135deg, #18251f, #286346); }
 .purple-hero .hero-dot, .purple-hero .eyebrow { color: var(--purple); }.blue-hero .hero-dot, .blue-hero .eyebrow { color: var(--blue); }.green-hero .hero-dot, .green-hero .eyebrow { color: var(--green); }
