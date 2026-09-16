@@ -99,6 +99,31 @@ A segmentação identifica grupos com características e necessidades semelhante
 
 Uma publicidade eficaz traduz atributos técnicos em benefícios claros e relevantes. A dimensão simbólica do valor ajuda a criar narrativas que tornam a marca preferida e saliente.
 
+### Fatores do comportamento do consumidor
+
+- **Culturais:** cultura, subculturas, religião e classe social.
+- **Sociais:** grupos de referência, família, amigos e influenciadores.
+- **Pessoais:** idade, renda, ocupação e ciclo de vida.
+- **Psicológicos:** percepção, motivação e aprendizagem.
+
+### Jornada do consumidor
+
+Reconhecimento do problema → busca de informação → avaliação de alternativas → compra → experiência → pós-compra. A jornada pode ser não linear.
+
+**Cognitive offloading** é a transferência de tarefas mentais e decisões para tecnologias externas, como inteligência artificial, Waze e sistemas de recomendação.
+
+### Marketing social e mercados
+
+- **Purpose washing:** discurso social ou ambiental sem ações concretas e coerentes.
+- **STP:** Segmentação, Targeting e Posicionamento.
+- **Segmentação psicográfica:** estilo de vida, valores, atitudes, interesses e personalidade.
+- **B2B:** decisões coletivas, ciclos mais longos e foco em valor e resultado empresarial.
+- **B2C:** comunicação para consumidores finais, com influências funcionais, emocionais, sociais e culturais.
+
+## 8. Tendências de consumo
+
+O consumidor híbrido combina razões objetivas, como preço e garantia, com aspectos simbólicos, como identidade e pertencimento. A jornada é cada vez mais **figital**, integrando experiências físicas e digitais, e pode ser mediada por assistentes de IA no chamado **agentic commerce**.
+
 ## Para revisar antes da prova
 
 - Diferencie necessidade, desejo e benefício.
@@ -107,3 +132,4 @@ Uma publicidade eficaz traduz atributos técnicos em benefícios claros e releva
 - Explique a equação do valor percebido.
 - Saiba diferenciar macroambiente e microambiente.
 - Relacione segmentação, persona e valor simbólico.
+- Revise a jornada do consumidor, STP, purpose washing e cognitive offloading.
