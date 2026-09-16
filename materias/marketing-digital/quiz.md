@@ -36,19 +36,25 @@ A etapa de conversão busca obter os dados de contato do visitante, transformand
 
 </details>
 
-### 3. Qual é a diferença entre uma estratégia de marketing e uma estratégia de marketing digital?
+### 3. Estratégias de busca que utilizam expressões mais específicas e focadas em nichos, apresentando menor volume de buscas mas maior probabilidade de rankeamento e conversão, são conhecidas como palavras-chave de ______.
+
+Resposta: **cauda longa** (*long tail*).
+
+Palavras-chave de cauda longa são termos compostos por três ou mais palavras que refletem uma intenção de busca muito específica do usuário.
+
+### 4. Qual é a diferença entre uma estratégia de marketing e uma estratégia de marketing digital?
 
 Resposta:
 
-### 4. Em que etapa da jornada do consumidor a métrica **[métrica]** é mais útil?
+### 5. Em que etapa da jornada do consumidor a métrica **[métrica]** é mais útil?
 
 Resposta:
 
-### 5. Compare os canais **[canal A]** e **[canal B]**.
+### 6. Compare os canais **[canal A]** e **[canal B]**.
 
 Resposta:
 
-### 6. Como você avaliaria o resultado da campanha **[campanha]**?
+### 7. Como você avaliaria o resultado da campanha **[campanha]**?
 
 Resposta:
 
@@ -56,7 +62,8 @@ Resposta:
 
 - 1. B — foco na permissão e na atração orgânica por meio de conteúdo relevante.
 - 2. A — transformar visitantes em leads por meio de landing pages e materiais ricos.
-- 3. A preencher conforme o material da disciplina.
-- 4. A preencher conforme a métrica e a etapa da jornada estudadas.
-- 5. A preencher conforme os canais comparados.
-- 6. A preencher conforme o objetivo e os indicadores da campanha.
+- 3. Cauda longa (*long tail*).
+- 4. A preencher conforme o material da disciplina.
+- 5. A preencher conforme a métrica e a etapa da jornada estudadas.
+- 6. A preencher conforme os canais comparados.
+- 7. A preencher conforme o objetivo e os indicadores da campanha.
