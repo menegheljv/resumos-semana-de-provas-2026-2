@@ -2,6 +2,10 @@
 
 Repositório público colaborativo para revisar as avaliações do período **2026/2 — P4N**.
 
+## Acessar a página
+
+**[Abrir o site de estudos →](https://menegheljv.github.io/resumos-semana-de-provas-2026-2/)**
+
 ## Matérias
 
 | Matéria | Resumo | Apresentação | Quiz |
