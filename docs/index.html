@@ -58,15 +58,32 @@
     </section>
     <section class="contribute">
       <p class="eyebrow">Estudo colaborativo</p>
-      <h3>Adicione seu prÃ³prio resumo.</h3>
-      <p>Compartilhe anotaÃ§Ãµes, exemplos e correÃ§Ãµes com a turma. Seu envio serÃ¡ criado como uma contribuiÃ§Ã£o no GitHub para revisÃ£o e publicaÃ§Ã£o.</p>
-      <a class="button" href="https://github.com/menegheljv/resumos-semana-de-provas-2026-2/issues/new?template=resumo.yml" target="_blank" rel="noreferrer">Enviar um resumo <span>â†—</span></a>
+      <h3>Adicione seu próprio resumo.</h3>
+      <p>O resumo fica salvo neste navegador, sem enviar você para o GitHub.</p>
+      <form id="summary-form">
+        <div class="student-fields">
+          <label for="summary-subject">Matéria</label>
+          <select id="summary-subject" required>
+            <option value="">Selecione uma matéria</option>
+            <option>Marketing</option>
+            <option>Marketing Digital</option>
+            <option>Planejamento e Estratégias de Comunicação Integrada</option>
+            <option>Produção Gráfica</option>
+          </select>
+          <label for="summary-title">Título</label>
+          <input id="summary-title" required placeholder="Ex.: Revisão da aula 02">
+          <label for="summary-text">Resumo</label>
+          <textarea id="summary-text" required placeholder="Escreva ou cole seu resumo aqui..."></textarea>
+        </div>
+        <button class="button" type="submit">Salvar resumo</button>
+      </form>
+      <div id="saved-summaries"></div>
     </section>
   </main>
 
   <footer class="wrap footer">
     <span>Feito para estudar junto.</span>
-    <a href="https://github.com/menegheljv/resumos-semana-de-provas-2026-2" target="_blank" rel="noreferrer">Contribua no GitHub â†—</a>
+    <a href="#summary-form">Adicionar resumo</a>
   </footer>
   <script>
     document.querySelectorAll(".subject-card").forEach((card) => {
@@ -77,8 +94,24 @@
           card.querySelector("#" + tab.dataset.target).classList.add("active");
         });
       });
+      const summaryForm = document.getElementById("summary-form");
+      const savedSummaries = document.getElementById("saved-summaries");
+      const storageKey = "p4n-study-summaries";
+      const escapeHtml = (value) => value.replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[character]));
+      const renderSummaries = () => {
+        const items = JSON.parse(localStorage.getItem(storageKey) || "[]");
+        savedSummaries.innerHTML = items.map((item) => `<article class="saved-summary"><p class="eyebrow">${escapeHtml(item.subject)}</p><h4>${escapeHtml(item.title)}</h4><p>${escapeHtml(item.text)}</p></article>`).join("");
+      };
+      summaryForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const items = JSON.parse(localStorage.getItem(storageKey) || "[]");
+        items.push({ subject: document.getElementById("summary-subject").value, title: document.getElementById("summary-title").value, text: document.getElementById("summary-text").value });
+        localStorage.setItem(storageKey, JSON.stringify(items));
+        summaryForm.reset();
+        renderSummaries();
+      });
+      renderSummaries();
     });
   </script>
 </body>
 </html>
-
