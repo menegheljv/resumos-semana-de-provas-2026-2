@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap");
 
-:root { --ink: #171717; --muted: #77736d; --paper: #f5f3ef; --line: #dedbd4; --orange: #e85d9e; --purple: #9a78e7; --blue: #5d9ee8; --green: #63b58a; }
+:root { --ink: #171717; --muted: #77736d; --paper: #f5f3ef; --line: #dedbd4; --orange: #e85d9e; --purple: #9a78e7; --blue: #5d9ee8; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; color: var(--ink); background: var(--paper); font: 15px/1.6 Manrope, sans-serif; overflow-x: hidden; }
@@ -34,10 +34,9 @@ main { padding: 64px 0 52px; }
 .accent-orange { --subject-color: var(--orange); --subject-bg: #ffe2d5; background: #fff; }
 .accent-purple { --subject-color: var(--purple); --subject-bg: #e9ddff; background: #fff; }
 .accent-blue { --subject-color: var(--blue); --subject-bg: #dceeff; background: #fff; }
-.accent-green { --subject-color: var(--green); --subject-bg: #d9f3e4; background: #fff; }
 .subject-card .subject-title:hover, .detail-panel .source-link:hover { color: var(--subject-color); }
-.subject-hero.orange-hero { background: linear-gradient(135deg, #351b2b, #8d3564); }.subject-hero.purple-hero { background: linear-gradient(135deg, #1e1a27, #493572); }.subject-hero.blue-hero { background: linear-gradient(135deg, #18232e, #28567f); }.subject-hero.green-hero { background: linear-gradient(135deg, #18251f, #286346); }
-.purple-hero .hero-dot, .purple-hero .eyebrow { color: var(--purple); }.blue-hero .hero-dot, .blue-hero .eyebrow { color: var(--blue); }.green-hero .hero-dot, .green-hero .eyebrow { color: var(--green); }
+.subject-hero.orange-hero { background: linear-gradient(135deg, #351b2b, #8d3564); }.subject-hero.purple-hero { background: linear-gradient(135deg, #1e1a27, #493572); }.subject-hero.blue-hero { background: linear-gradient(135deg, #18232e, #28567f); }
+.purple-hero .hero-dot, .purple-hero .eyebrow { color: var(--purple); }.blue-hero .hero-dot, .blue-hero .eyebrow { color: var(--blue); }
 .resources { display: flex; gap: 4px; overflow-x: auto; border-bottom: 1px solid rgba(23,23,23,.16); scrollbar-width: none; }
 .resources::-webkit-scrollbar { display: none; }
 .tab { flex: 0 0 auto; min-height: 42px; padding: 9px 4px; margin-right: 10px; color: var(--muted); border: 0; background: transparent; cursor: pointer; font: 10px "DM Mono", monospace; }

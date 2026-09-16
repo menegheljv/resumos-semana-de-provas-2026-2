@@ -13,7 +13,6 @@ body:
         - Marketing
         - Marketing Digital
         - Planejamento e Estratégias de Comunicação Integrada
-        - Produção Gráfica
     validations:
       required: true
   - type: textarea

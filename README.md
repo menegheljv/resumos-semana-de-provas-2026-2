@@ -13,7 +13,6 @@ Repositório público colaborativo para revisar as avaliações do período **20
 | [Marketing](materias/marketing) | [Abrir](materias/marketing/resumo.md) | [Abrir](materias/marketing/apresentacao.md) | [Abrir](materias/marketing/quiz.md) |
 | [Marketing Digital](materias/marketing-digital) | [Abrir](materias/marketing-digital/resumo.md) | [Abrir](materias/marketing-digital/apresentacao.md) | [Abrir](materias/marketing-digital/quiz.md) |
 | [Planejamento e Estratégias de Comunicação Integrada](materias/planejamento-comunicacao-integrada) | [Abrir](materias/planejamento-comunicacao-integrada/resumo.md) | [Abrir](materias/planejamento-comunicacao-integrada/apresentacao.md) | [Abrir](materias/planejamento-comunicacao-integrada/quiz.md) |
-| [Produção Gráfica](materias/producao-grafica) | [Abrir](materias/producao-grafica/resumo.md) | [Abrir](materias/producao-grafica/apresentacao.md) | [Abrir](materias/producao-grafica/quiz.md) |
 
 ## Como usar
 
