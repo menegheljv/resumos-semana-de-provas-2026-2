@@ -30,17 +30,9 @@ D. Todas as alternativas anteriores.
 
 </details>
 
-### 3. Explique a Tríade do Valor para o Cliente e diferencie o Mundo VUCA do Mundo BANI.
-
-<details><summary>Resposta esperada</summary>
-
-A Tríade do Valor combina **Qualidade, Serviço e Preço**: qualidade e serviço aumentam a percepção de benefício, enquanto o preço representa um sacrifício. VUCA descreve um ambiente volátil, incerto, complexo e ambíguo. BANI enfatiza um contexto frágil, ansioso, não linear e incompreensível, que exige flexibilidade e resposta rápida.
-
-</details>
-
 ## Módulo 2 — Comportamento e jornada
 
-### 4. Qual alternativa descreve um fator psicológico do comportamento do consumidor?
+### 3. Qual alternativa descreve um fator psicológico do comportamento do consumidor?
 
 A. Classe social, renda e ciclo de vida familiar.  
 B. Percepção, atenção, distorção, retenção seletiva e motivação.  
@@ -53,7 +45,7 @@ D. Grupos de referência, amigos e criadores de conteúdo.
 
 </details>
 
-### 5. Qual é a ordem correta das etapas da jornada do consumidor?
+### 4. Qual é a ordem correta das etapas da jornada do consumidor?
 
 A. Compra, busca, reconhecimento, avaliação, experiência e pós-compra.  
 B. Reconhecimento do problema, busca de informação, avaliação de alternativas, compra, experiência e pós-compra.  
@@ -66,7 +58,7 @@ D. Pesquisa, segmentação, posicionamento, venda e suporte.
 
 </details>
 
-### 6. O que significa *Cognitive Offloading*?
+### 5. O que significa *Cognitive Offloading*?
 
 A. Cancelar compras por excesso de taxas.  
 B. Transferir tarefas mentais e decisões para tecnologias externas, como IA, Waze e recomendações personalizadas.  
@@ -81,7 +73,7 @@ D. Reduzir preços em liquidações.
 
 ## Módulo 3 — Marketing social e segmentação
 
-### 7. O que é *Purpose Washing*?
+### 6. O que é *Purpose Washing*?
 
 A. Lavagem de dinheiro por ONGs.  
 B. Comunicar causas sociais ou ambientais sem demonstrar ações concretas e coerentes no negócio.  
@@ -94,7 +86,7 @@ D. Limpeza de dados de CRM.
 
 </details>
 
-### 8. Em STP, a segmentação psicográfica baseia-se em:
+### 7. Em STP, a segmentação psicográfica baseia-se em:
 
 A. País, cidade, clima e densidade populacional.  
 B. Idade, gênero, renda e escolaridade.  
@@ -107,7 +99,7 @@ D. Frequência de compra, lealdade e cliques.
 
 </details>
 
-### 9. Em comparação ao B2C, como se caracteriza o mercado B2B?
+### 8. Em comparação ao B2C, como se caracteriza o mercado B2B?
 
 A. Muitos compradores e decisões puramente impulsivas.  
 B. Decisão frequentemente coletiva, ciclos mais longos e foco em valor e resultado empresarial.  
@@ -122,4 +114,4 @@ D. Comunicação exclusiva em canais de massa.
 
 ## Gabarito resumido
 
-1. B · 2. D · 3. Discursiva · 4. B · 5. B · 6. B · 7. B · 8. C · 9. B
+1. B · 2. D · 3. B · 4. B · 5. B · 6. B · 7. C · 8. B
