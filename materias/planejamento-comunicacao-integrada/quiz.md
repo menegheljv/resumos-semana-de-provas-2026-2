@@ -140,3 +140,50 @@ C. 10: os objetivos da comunicação de Cahen.
 D. 7: desempenho, produtos e serviços, inovação, ambiente de trabalho, governança, cidadania e liderança.
 
 **Resposta: D.** Sete dimensões. B é o Big Data (5 Vs) e C mistura autores.
+
+## Revisão final
+
+### 16. Na classificação de Torquato (2010), que tipo de comunicação diz respeito ao clima interno da organização: as ideias, os valores e os costumes do dia a dia?
+
+A. Comunicação cultural.
+B. Comunicação administrativa.
+C. Sistemas de informação.
+D. Comunicação social.
+
+**Resposta: A.** A comunicação cultural trata do clima interno. A administrativa é o suporte informacional-normativo (normas, portarias). Sistemas de informação são os dados armazenados. A social reúne jornalismo, relações públicas, publicidade, editoração e marketing.
+
+### 17. O que são stakeholders, segundo o material da aula?
+
+A. Somente os acionistas da empresa.
+B. Apenas os clientes que compram o produto.
+C. Públicos com relação especial com a organização, cujas decisões interferem diretamente no seu dia a dia.
+D. Os concorrentes diretos no mercado.
+
+**Resposta: C.** Incluem patrocinadores, mercado do produto, públicos internos, públicos externos (governo, mídia, comunidade) e fornecedores.
+
+### 18. Segundo Schultz e Barnes, onde reside o valor da marca?
+
+A. Somente no registro legal da marca.
+B. No orçamento de publicidade da organização.
+C. Exclusivamente no departamento de marketing.
+D. No cliente ou consumidor: se ele deixa de valorizar a marca, o valor para a organização também cai.
+
+**Resposta: D.** O consumidor final determina o valor da marca para si, em relação às outras alternativas. Por isso o valor se constrói com ações de comunicação que envolvem clientes, empregados, parceiros e acionistas.
+
+### 19. Na premissa "o que está dentro e o que está fora", de Wally Olins, quais são as duas funções primordiais da marca?
+
+A. Registrar o nome e proteger o logotipo.
+B. Convencer quem está fora a comprar e persuadir quem faz parte dela a crer no seu ideal.
+C. Reduzir custos de produção e aumentar a margem de lucro.
+D. Divulgar preços e promoções ao mercado.
+
+**Resposta: B.** A marca fala para fora (mercado) e para dentro (colaboradores), e as duas mensagens precisam ser coerentes.
+
+### 20. Na comunicação organizacional integrada, quais funções são exercidas prioritariamente pelo jornalista, segundo Kunsch?
+
+A. Merchandising, venda direta e SAC.
+B. Comunicação administrativa e elaboração de normas.
+C. Jornalismo empresarial, assessoria de imprensa e editoração multimídia, além da mídia interna (house organ, jornal mural, blogs).
+D. Planejamento de preços e distribuição.
+
+**Resposta: C.** Kunsch prefere relações-públicas para a comunicação institucional, mas essas funções são prioritariamente de jornalistas. Merchandising, venda direta e SAC pertencem à comunicação mercadológica.

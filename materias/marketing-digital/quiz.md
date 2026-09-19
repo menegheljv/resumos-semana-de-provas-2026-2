@@ -1,6 +1,6 @@
 # Marketing Digital — Quiz de fixação
 
-As 10 primeiras questões vêm do quiz "Mídias Sociais e Marketing Digital" do material da disciplina. As demais seguem os slides 02, 03 e 04 e os PDFs de mídias sociais.
+Parte das questões vem do quiz "Mídias Sociais e Marketing Digital" do material da disciplina. As demais seguem os slides 02, 03 e 04 e os PDFs de mídias sociais.
 
 ## Inbound, funil e SEO
 
@@ -173,3 +173,23 @@ C. Alto: acionar a diretoria.
 D. Não é crise, deve ser ignorado.
 
 **Resposta: A.** Dúvidas operacionais e reclamações isoladas são risco baixo. O tom é prestativo, humano e atencioso.
+
+## Redes e copywriting
+
+### 19. Na fórmula AIDA, usada para estruturar a jornada persuasiva de um texto, o que significam as letras?
+
+A. Atenção, Interesse, Desejo e Ação.
+B. Alcance, Impressão, Dados e Anúncio.
+C. Audiência, Inbound, Divulgação e Automação.
+D. Atração, Indicação, Decisão e Análise.
+
+**Resposta: A.** Atenção (interrompa o scroll), Interesse (aprofunde a relevância), Desejo (conecte o benefício a uma necessidade real) e Ação (convide com um CTA claro e direto).
+
+### 20. Segundo a teoria do número de Dunbar, citada no material de mídias sociais, qual é o limite aproximado de conexões que uma pessoa consegue manter de forma relacionada?
+
+A. Cerca de 6 pessoas.
+B. Cerca de 50 pessoas.
+C. Cerca de 150 pessoas.
+D. Cerca de 1.000 pessoas.
+
+**Resposta: C.** Os estudos apontam um máximo em torno de 150 conexões. Seis é o número de graus de separação da teoria das redes, não o limite de Dunbar.

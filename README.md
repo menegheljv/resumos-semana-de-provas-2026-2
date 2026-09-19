@@ -9,8 +9,8 @@ Site de estudo da turma para as avaliações do período **2026/2 — P4N** (UVV
 | Matéria | Resumo | Revisão relâmpago | Quiz |
 |---|---|---|---|
 | Marketing | [resumo](materias/marketing/resumo.md) | [cartões](materias/marketing/apresentacao.md) | [20 questões](materias/marketing/quiz.md) |
-| Marketing Digital | [resumo](materias/marketing-digital/resumo.md) | [cartões](materias/marketing-digital/apresentacao.md) | [18 questões](materias/marketing-digital/quiz.md) |
-| Planejamento e Estratégias de Comunicação Integrada | [resumo](materias/planejamento-comunicacao-integrada/resumo.md) | [cartões](materias/planejamento-comunicacao-integrada/apresentacao.md) | [15 questões](materias/planejamento-comunicacao-integrada/quiz.md) |
+| Marketing Digital | [resumo](materias/marketing-digital/resumo.md) | [cartões](materias/marketing-digital/apresentacao.md) | [20 questões](materias/marketing-digital/quiz.md) |
+| Planejamento e Estratégias de Comunicação Integrada | [resumo](materias/planejamento-comunicacao-integrada/resumo.md) | [cartões](materias/planejamento-comunicacao-integrada/apresentacao.md) | [20 questões](materias/planejamento-comunicacao-integrada/quiz.md) |
 
 Além disso, a **Biblioteca da turma**: uma pasta do Google Drive onde cada aluno sobe seus próprios resumos. O botão está na página inicial do site.
 
