@@ -15,8 +15,6 @@ ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
 MAT = ROOT / "materias"
 CFG = json.loads((ROOT / "site.config.json").read_text(encoding="utf-8"))
-REPO = CFG["repo"]
-BRANCH = CFG["branch"]
 
 SUBJECTS = [
     {
@@ -147,8 +145,15 @@ def render_block(block):
         return f"<{kind}>" + "".join(f"<li>{inline(x)}</li>" for x in block[1]) + f"</{kind}>"
     if kind == "table":
         head = "".join(f"<th>{inline(c)}</th>" for c in block[1])
-        body = "".join("<tr>" + "".join(f"<td>{inline(c)}</td>" for c in row) + "</tr>" for row in block[2])
-        return f'<div class="table-wrap"><table><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>'
+        labels = [html.escape(h) for h in block[1]]
+        body = "".join(
+            "<tr>" + "".join(
+                f'<td data-label="{labels[i] if i < len(labels) else ""}">{inline(c)}</td>' for i, c in enumerate(row)
+            ) + "</tr>"
+            for row in block[2]
+        )
+        cls = ' class="tbl-num"' if block[1] and block[1][0].strip() == "#" else ""
+        return f'<div class="table-wrap"><table{cls}><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>'
     if kind == "quote":
         text = block[1]
         low = text.lower()
@@ -305,7 +310,7 @@ def topbar(links):
         '<header class="topbar"><div class="wrap topbar-in">'
         '<a class="brand" href="index.html" aria-label="Início">P4N<span>.</span></a>'
         f'<nav class="toplinks" aria-label="Seções">{items}</nav>'
-        f'<a class="repo-link" href="{REPO}" target="_blank" rel="noreferrer">GitHub ↗</a>'
+        f'<a class="top-cta" href="{drive_folder_url()}" target="_blank" rel="noreferrer">Enviar resumo ↗</a>'
         "</div></header>\n"
     )
 
@@ -317,8 +322,7 @@ def footer():
         "<p>Feito pela turma, para a turma. Conferido com os slides da disciplina. Na dúvida, vale o que o professor disse em aula.</p></div>"
         '<nav aria-label="Rodapé">'
         '<a href="index.html#biblioteca">Biblioteca da turma</a>'
-        f'<a href="{REPO}/issues/new/choose" target="_blank" rel="noreferrer">Achou um erro?</a>'
-        f'<a href="{REPO}" target="_blank" rel="noreferrer">Código no GitHub ↗</a>'
+        f'<a href="{drive_folder_url()}" target="_blank" rel="noreferrer">Pasta no Drive ↗</a>'
         "</nav></div></footer>\n</body>\n</html>\n"
     )
 
@@ -425,7 +429,7 @@ def build_index(data):
         '<li><span>3</span><div><h3>Complete com a turma</h3><p>Suba seu resumo na biblioteca e use o dos colegas.</p></div></li></ol>'
     )
     page = (
-        head("Semana de Provas 2026/2 · P4N", "Resumos, revisão relâmpago e quizzes das três matérias da semana de provas 2026/2, mais uma biblioteca de resumos da turma.")
+        head("Semana de Provas 2026/2 · P4N", "Resumos, revisão relâmpago e quizzes das três matérias da semana de provas 2026/2, mais uma biblioteca de resumos da turma.", "page-home")
         + topbar([("#materias", "Matérias"), ("#como", "Como estudar"), ("#biblioteca", "Biblioteca")])
         + '<header class="hero hero-home"><div class="wrap hero-in">'
         '<p class="eyebrow">UVV · P4N · 2026/2</p>'
@@ -461,10 +465,9 @@ def build_subject(s, d):
             body.append(f'<section class="sec sec-check" id="{slug}"><h2>Antes de entrar na prova</h2>{content}</section>')
         else:
             body.append(f'<section class="sec" id="{slug}"><h2>{inline(title)}</h2>{content}</section>')
-    edit = f"{REPO}/edit/{BRANCH}/materias/{s['slug']}/resumo.md"
     page = (
-        head(f"{s['name']} · Semana de Provas", s["tagline"])
-        + topbar([("#resumo", "Resumo"), ("#revisao", "Revisão relâmpago"), ("#quiz", "Quiz"), ("#drive", "Biblioteca")])
+        head(f"{s['name']} · Semana de Provas", s["tagline"], "page-light")
+        + topbar([("#resumo", "Resumo"), ("#revisao", "Revisão"), ("#quiz", "Quiz"), ("#drive", "Biblioteca")])
         + f'<header class="hero hero-sub hero-{color}"><div class="wrap hero-in">'
         f'<p class="eyebrow">Matéria {s["num"]} · 2026/2</p><h1>{s["title_html"]}</h1>'
         f'<p class="lede">{esc(s["tagline"])}</p>'
@@ -474,8 +477,7 @@ def build_subject(s, d):
         '<main id="conteudo">'
         f'<div class="wrap subject-layout accent-{color}" id="resumo">'
         f'<aside class="toc"><details open><summary>Nesta página</summary><ol>{toc}<li><a href="#revisao">Revisão relâmpago</a></li></ol></details></aside>'
-        f'<article class="resumo"><div class="resumo-lead">{d["lead"]}</div>{"".join(body)}'
-        f'<p class="edit-link"><a href="{edit}" target="_blank" rel="noreferrer">Achou um erro? Edite este resumo no GitHub ↗</a></p></article>'
+        f'<article class="resumo"><div class="resumo-lead">{d["lead"]}</div>{"".join(body)}</article>'
         "</div>"
         f'<section class="wrap block accent-{color}" id="revisao"><div class="section-head"><p class="eyebrow">Revisão relâmpago</p>'
         f'<h2>Um minuto por cartão.</h2><p>{esc(d["card_lead"])}</p></div>'
@@ -495,7 +497,7 @@ def build_subject(s, d):
 def build_quiz(s, d):
     color = s["color"]
     page = (
-        head(f"Quiz de {s.get('short', s['name'])} · Semana de Provas", f"Quiz de {s['name']} com gabarito e explicação na hora.")
+        head(f"Quiz de {s.get('short', s['name'])} · Semana de Provas", f"Quiz de {s['name']} com gabarito e explicação na hora.", "page-light")
         + topbar([("#topo", "Quiz"), (s["page"], "Voltar ao resumo")])
         + f'<header class="hero hero-sub hero-{color}" id="topo"><div class="wrap hero-in">'
         f'<p class="eyebrow">Quiz · {esc(s.get("short", s["name"]))}</p>'

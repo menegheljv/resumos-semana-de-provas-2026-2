@@ -14,6 +14,12 @@ Site de estudo da turma para as avaliações do período **2026/2 — P4N** (UVV
 
 Além disso, a **Biblioteca da turma**: uma pasta do Google Drive onde cada aluno sobe seus próprios resumos. O botão está na página inicial do site.
 
+## Formato dos arquivos
+
+- `resumo.md`: `# Título`, um parágrafo de abertura e seções `## 1. Nome`. Destaques com citação iniciada por `**Cai na prova:**`, `**Atenção:**` ou `**Regra de ouro:**`. Mantenha `## Antes de entrar na prova` e `## Fontes` no fim.
+- `apresentacao.md`: cada cartão é `## Slide N — Título` seguido de marcadores `-`.
+- `quiz.md`: grupos com `## Nome`; cada questão é `### N. Enunciado`, quatro alternativas `A.` a `D.` e a linha `**Resposta: X.** Explicação.`
+
 ## Como o site é gerado
 
 Os textos ficam em `materias/<matéria>/` (`resumo.md`, `apresentacao.md`, `quiz.md`). O script `scripts/build.py` transforma esses arquivos nas páginas de `docs/`. O GitHub Actions roda o script a cada push na `master` e publica o resultado no GitHub Pages. Ou seja: **editar um `.md` já atualiza o site.**
@@ -25,6 +31,6 @@ python3 scripts/build.py
 python3 -m http.server 8000 --directory docs
 ```
 
-O formato de cada arquivo está descrito em [CONTRIBUTING.md](CONTRIBUTING.md). Os IDs das pastas do Drive ficam em `site.config.json`.
+Os IDs das pastas do Drive ficam em `site.config.json`.
 
 > Conteúdo baseado nos slides e PDFs das disciplinas. Confira sempre com o material do professor.
