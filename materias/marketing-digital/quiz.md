@@ -1,147 +1,175 @@
-# Marketing Digital — Quiz
+# Marketing Digital — Quiz de fixação
 
-> Quiz baseado no material **02 - Inbound e Marketing de Conteúdo Digital**.
+As 10 primeiras questões vêm do quiz "Mídias Sociais e Marketing Digital" do material da disciplina. As demais seguem os slides 02, 03 e 04 e os PDFs de mídias sociais.
 
-## Perguntas
+## Inbound, funil e SEO
 
 ### 1. Qual característica define fundamentalmente a abordagem do Inbound Marketing em relação ao Outbound Marketing?
 
-A. A padronização da informação para atingir todos os públicos simultaneamente.  
-B. O foco na permissão e atração orgânica por meio de conteúdo relevante.  
-C. O maior custo de aquisição de cliente devido à necessidade de criação de conteúdo.  
-D. A utilização de meios de contato direto como e-mail direto e telemarketing.
+A. O foco na interrupção direta do usuário por meio de anúncios invasivos e chamadas não solicitadas.
+B. O foco na permissão e atração orgânica por meio da entrega de conteúdo relevante e personalizado.
+C. A utilização exclusiva de malas diretas e propagandas tradicionais de alto custo.
+D. A padronização da mensagem comercial enviada de forma idêntica para todos os públicos.
 
-<details>
-<summary>Gabarito e explicação</summary>
+**Resposta: B.** O Inbound é marketing de atração: conteúdo útil faz o cliente procurar a marca. O Outbound interrompe o consumidor.
 
-**Resposta correta: B.**
+### 2. No funil de Inbound Marketing, qual é o objetivo principal da etapa "CONVERTER" e como ele é geralmente alcançado?
 
-O Inbound Marketing baseia-se no marketing de atração: o conteúdo útil faz com que o cliente procure a marca por vontade própria. Já o Outbound é associado à interrupção e à abordagem proativa, muitas vezes intrusiva.
+A. Conquistar visitantes regulares para o site através de SEO e posts em blogs.
+B. Transformar visitantes em leads por meio de landing pages, formulários e oferta de materiais ricos.
+C. Efetuar a venda direta via reuniões presenciais e envio de propostas comerciais exclusivas.
+D. Fidelizar os clientes existentes através de pesquisas de satisfação e atendimento pós-venda.
 
-</details>
+**Resposta: B.** Converter é captar os dados do visitante em troca de valor (e-book, infográfico, ferramenta). A é "Atrair", C é "Vender", D é "Encantar".
 
-### 2. Ao analisar o funil de Inbound Marketing, qual é o objetivo principal da etapa de “CONVERTER” e como ele é geralmente alcançado?
+### 3. Expressões mais específicas e focadas em nichos, com menor volume de buscas mas maior probabilidade de ranqueamento e conversão, são palavras-chave de:
 
-A. Transformar visitantes em leads por meio de landing pages e materiais ricos.  
-B. Fechar negócios com leads qualificados utilizando CRM e automação.  
-C. Conquistar visitantes regulares através de postagens em blogs e SEO.  
-D. Transformar consumidores em promotores através de uma experiência surpreendente.
+A. Cauda curta (Head Terms).
+B. Mídia de performance.
+C. Cauda longa (Long Tail).
+D. Termos institucionais de marca.
 
-<details>
-<summary>Gabarito e explicação</summary>
+**Resposta: C.** Long tail: três palavras ou mais, menos concorrência, intenção de busca bem definida.
 
-**Resposta correta: A.**
+### 4. Qual é a importância da Meta Description no SEO on-page?
 
-A etapa de conversão busca obter os dados de contato do visitante, transformando-o em lead, em troca de conteúdos de valor oferecidos em landing pages e outros materiais ricos. Fechar negócios pertence à etapa “Vender”; conquistar visitantes, à etapa “Atrair”; e transformar clientes em promotores, à etapa “Encantar”.
+A. Atuar como título principal da página no código HTML (H1), com limite de 65 caracteres.
+B. Servir como fragmento atrativo para aumentar a taxa de cliques (CTR) nos resultados de busca, com máximo recomendado de 320 caracteres.
+C. Inserir palavras-chave ocultas para os robôs do Google, com limite de 100 caracteres.
+D. Substituir o Alt Text das imagens, sem restrição de tamanho.
 
-</details>
+**Resposta: B.** A meta description é o resumo convidativo na página de resultados (SERP). O limite de 320 caracteres é o do material da disciplina. O limite de 65 caracteres é da Title Tag.
 
-### 3. Estratégias de busca que utilizam expressões mais específicas e focadas em nichos, apresentando menor volume de buscas mas maior probabilidade de rankeamento e conversão, são conhecidas como palavras-chave de ______.
+### 5. Quais são as principais vantagens do SEO em relação ao SEM?
 
-Resposta: **cauda longa** (*long tail*).
+A. Resultados imediatos no primeiro dia e nenhuma necessidade de produzir conteúdo.
+B. Resultados mais duráveis ao longo do tempo e maior ROI no longo prazo.
+C. Custo fixo por clique e controle exato da posição diária.
+D. Alcance garantido independentemente de mudanças nos algoritmos.
 
-Palavras-chave de cauda longa são termos compostos por três ou mais palavras que refletem uma intenção de busca muito específica do usuário.
+**Resposta: B.** O SEO exige tempo para maturar, mas o tráfego orgânico segue gerando visitas depois que a otimização termina. O SEM é rápido e cessa quando o investimento acaba.
 
-### 4. No ecossistema da mídia programática, quais são as funções essenciais desempenhadas pelas plataformas DSP e SSP?
+## Mídia programática
 
-A. A DSP gerencia a venda do inventário dos sites; a SSP monitora cookies e preferências de compra.  
-B. A DSP automatiza a compra de inventários para anunciantes e agências; a SSP permite que publishers gerenciem e vendam seus espaços publicitários.  
-C. A DSP funciona como leilão físico de anúncios; a SSP faz a intermediação financeira bancária.  
-D. Ambas são plataformas voltadas exclusivamente para a criação de banners estáticos em blogs.
+### 6. No ecossistema da mídia programática, quais são as funções de DSP e SSP?
 
-<details><summary>Gabarito e explicação</summary>
+A. A DSP gerencia a venda do inventário dos sites; a SSP monitora cookies e preferências de compra.
+B. A DSP automatiza a compra de inventário para anunciantes e agências; a SSP permite que publishers gerenciem e vendam seus espaços publicitários.
+C. A DSP funciona como leilão físico de anúncios; a SSP faz intermediação financeira bancária.
+D. Ambas servem exclusivamente para criar banners estáticos em blogs.
 
-**Resposta correta: B.** A DSP automatiza a compra de mídia pelos anunciantes, enquanto a SSP permite aos publishers ofertar e rentabilizar seu inventário nas Ad Exchanges.
+**Resposta: B.** DSP = lado da demanda (anunciante compra). SSP = lado da oferta (publisher vende). O leilão em tempo real acontece na Ad Exchange.
 
-</details>
+### 7. A estratégia que consiste em carregar uma lista prévia de contatos para encontrá-los online e direcionar campanhas a eles é:
 
-### 5. Para uma campanha de marketing digital cujo objetivo principal é o reconhecimento de marca através de um alcance massivo de impressões, qual modelo de precificação é o mais adequado?
-
-A. CPC (Custo por Clique).  
-B. CPL (Custo por Lead).  
-C. CPS (Custo por Venda).  
-D. CPM (Custo por Mil Impressões).
-
-<details><summary>Gabarito e explicação</summary>
-
-**Resposta correta: D.** O CPM é recomendado para campanhas de branding e visibilidade cujo foco é a quantidade de exibições do anúncio.
-
-</details>
-
-### 6. De acordo com os protocolos de gerenciamento de crises em mídias sociais, como uma empresa deve proceder ao identificar uma ocorrência de nível “ALTO”?
-
-A. Tratar o caso em comentários abertos e depois migrar o atendimento para um canal privado de SAC.  
-B. Publicar apenas uma nota informativa simples e manter todos os anúncios ativos normalmente.  
-C. Envolver imediatamente a diretoria, pausar as veiculações ativas e emitir um comunicado público oficial.  
-D. Aguardar 48 horas antes de se posicionar.
-
-<details><summary>Gabarito e explicação</summary>
-
-**Resposta correta: C.** Em crises graves, a diretoria deve ser acionada, os anúncios congelados e um posicionamento institucional publicado.
-
-</details>
-
-### 7. No contexto de SEO On-page, qual é a importância da Meta Description?
-
-A. Atuar como título principal da página no código HTML (H1).  
-B. Atuar como um fragmento atrativo para aumentar a taxa de cliques (CTR) nos resultados de busca.  
-C. Inserir palavras-chave ocultas para leitura dos robôs do Google.  
-D. Substituir o atributo Alt Text em imagens.
-
-<details><summary>Gabarito e explicação</summary>
-
-**Resposta correta: B.** A Meta Description funciona como um resumo convidativo na SERP para atrair cliques; o material recomenda até 320 caracteres.
-
-</details>
-
-### 8. A estratégia de mídia programática que consiste em carregar uma lista prévia de contatos para encontrá-los online e direcionar campanhas específicas a eles é chamada de:
-
-A. Geotargeting.  
-B. Retargeting.  
-C. Onboarding de dados.  
+A. Geotargeting.
+B. Retargeting.
+C. Onboarding de dados.
 D. Third Party Data.
 
-<details><summary>Gabarito e explicação</summary>
+**Resposta: C.** Onboarding de dados conecta listas próprias (e-mails, telefones) a identificadores digitais. Retargeting mira quem já interagiu com a marca.
 
-**Resposta correta: C.** O onboarding de dados conecta listas próprias de contatos a identificadores digitais para veicular campanhas direcionadas.
+### 8. Qual componente da mídia programática coleta e analisa dados de usuários, por meio de cookies, para segmentar anúncios?
 
-</details>
+A. SSP.
+B. Trading desk.
+C. DMP.
+D. Ad Exchange.
 
-### 9. Quais são as principais vantagens competitivas do SEO quando comparado ao SEM (tráfego pago)?
+**Resposta: C.** DMP (Data Management Platform). A trading desk opera campanhas via DSP. A Ad Exchange é o marketplace do leilão em tempo real.
 
-A. Resultados imediatos no primeiro dia e ausência de produção de conteúdo.  
-B. Resultados mais duráveis ao longo do tempo e maior ROI a longo prazo.  
-C. Custo fixo por clique e controle exato da posição diária.  
-D. Alcance garantido independentemente de alterações nos algoritmos.
+## Performance e plataformas
 
-<details><summary>Gabarito e explicação</summary>
+### 9. Para uma campanha cujo objetivo é reconhecimento de marca com alcance massivo de impressões, qual modelo de cobrança é o mais adequado?
 
-**Resposta correta: B.** Embora exija tempo para maturar, o SEO oferece visibilidade duradoura e maior ROI no longo prazo.
+A. CPC (Custo por Clique).
+B. CPL (Custo por Lead).
+C. CPS (Custo por Venda).
+D. CPM (Custo por Mil Impressões).
 
-</details>
+**Resposta: D.** CPM é o modelo de branding e visibilidade. CPL serve ao B2B e CPS ao e-commerce e afiliados.
 
-### 10. Ao criar anúncios no Google Ads, qual orientação estratégica o diferencia de redes sociais como Meta?
+### 10. O que diferencia o Google Ads de redes como o Meta?
 
-A. Focar na geração de demanda por meio de hobbies dos usuários.  
-B. Conectar marcas a pessoas com base na intenção ativa de busca demonstrada no momento da pesquisa.  
-C. Exigir que todos os anúncios sejam vídeos verticais.  
+A. Focar na geração de demanda e desejo passivo a partir de comportamento e hobbies.
+B. Conectar marcas a pessoas com base na intenção ativa de busca demonstrada na pesquisa.
+C. Exigir que todos os anúncios sejam vídeos verticais.
 D. Permitir campanhas apenas para empresas B2B.
 
-<details><summary>Gabarito e explicação</summary>
+**Resposta: B.** Google Ads parte da intenção ativa de busca. Meta Ads trabalha descoberta, interesse, comportamento e perfil.
 
-**Resposta correta: B.** O Google Ads pauta-se pela intenção ativa de busca, enquanto redes sociais trabalham mais a descoberta e a geração de interesse.
+### 11. Uma empresa B2B de ciclo longo quer pagar somente por cadastros de formulário preenchidos. Qual modelo de cobrança se encaixa?
 
-</details>
+A. CPM.
+B. CPS.
+C. CPL.
+D. CPC.
 
-## Gabarito resumido
+**Resposta: C.** CPL (custo por lead) é a aplicação recomendada para negócios B2B e vendas de ciclo longo.
 
-- 1. B — foco na permissão e na atração orgânica por meio de conteúdo relevante.
-- 2. A — transformar visitantes em leads por meio de landing pages e materiais ricos.
-- 3. Cauda longa (*long tail*).
-- 4. B — DSP compra inventário para anunciantes; SSP vende inventário para publishers.
-- 5. D — CPM.
-- 6. C — acionar a diretoria, pausar anúncios e emitir comunicado oficial.
-- 7. B — aumentar o CTR com um fragmento atrativo na SERP.
-- 8. C — onboarding de dados.
-- 9. B — resultados mais duráveis e maior ROI a longo prazo.
-- 10. B — intenção ativa de busca.
+### 12. Qual rede de anúncios tem como diferencial a segmentação por cargo, empresa, setor e senioridade, sendo forte em estratégias B2B?
+
+A. LinkedIn Ads.
+B. Pinterest Ads.
+C. TikTok Ads.
+D. X Ads.
+
+**Resposta: A.** O LinkedIn segmenta por perfil profissional. Formatos principais: Sponsored Content, Text Ads, Sponsored InMail e Dynamic Ads.
+
+### 13. No TikTok Ads, qual formato é um vídeo em tela cheia que aparece assim que o usuário abre o aplicativo, com duração máxima de 60 segundos?
+
+A. In-Feed.
+B. Branded Hashtag.
+C. Branded Effects.
+D. TopView.
+
+**Resposta: D.** O TopView garante impacto na abertura do app. In-Feed aparece entre vídeos orgânicos, com o rótulo "Patrocinado".
+
+## Conteúdo e estratégia
+
+### 14. Qual é a ordem correta das etapas do marketing de conteúdo apresentada no slide?
+
+A. Distribuição, persona, planejamento, mensuração e criação.
+B. Criação, mensuração, distribuição, persona e planejamento.
+C. Planejamento, persona, criação, distribuição e mensuração.
+D. Persona, mensuração, planejamento, criação e distribuição.
+
+**Resposta: C.** Planejamento, elaboração da persona, criação de conteúdo, distribuição e mensuração de resultados.
+
+### 15. Sobre mídia paga e conteúdo orgânico nas redes sociais, qual afirmação está correta?
+
+A. A mídia paga constrói autoridade lenta e duradoura; o orgânico garante alcance imediato.
+B. Ambos são iguais em custo e velocidade.
+C. A mídia paga dá alcance imediato e segmentado, mas a visibilidade cessa quando a verba pausa; o orgânico constrói confiança a longo prazo.
+D. O conteúdo orgânico exige investimento contínuo para existir.
+
+**Resposta: C.** A sinergia entre escala (paga) e engajamento (orgânico) é o diferencial das estratégias de alta performance.
+
+### 16. Qual público de mídia paga busca perfis parecidos com os melhores clientes da marca, reduzindo o CAC?
+
+A. Lookalike (audiência similar).
+B. Reengajamento.
+C. Prospecção fria.
+D. Whitelist.
+
+**Resposta: A.** Prospecção atrai novos leads. Reengajamento recupera quem já interagiu e não converteu. Lookalike expande o alcance a partir do perfil dos melhores clientes.
+
+## Crises
+
+### 17. Uma empresa identifica uma ocorrência de nível ALTO (crise ética, jurídica ou vazamento grave). Como proceder?
+
+A. Tratar o caso em comentários abertos e depois migrar para o SAC privado.
+B. Publicar apenas uma nota informativa simples e manter todos os anúncios ativos.
+C. Envolver imediatamente a diretoria, pausar as veiculações ativas e emitir um comunicado público oficial.
+D. Aguardar 48 horas antes de se posicionar.
+
+**Resposta: C.** Em crise grave, a diretoria é acionada, os anúncios são congelados e um posicionamento institucional, firme e responsável é publicado.
+
+### 18. Um cliente faz uma reclamação isolada nos comentários de um post da marca. Qual é o nível de crise e a ação indicada?
+
+A. Baixo: responder em público com agilidade e migrar para o SAC privado.
+B. Médio: publicar nota oficial detalhando providências.
+C. Alto: acionar a diretoria.
+D. Não é crise, deve ser ignorado.
+
+**Resposta: A.** Dúvidas operacionais e reclamações isoladas são risco baixo. O tom é prestativo, humano e atencioso.

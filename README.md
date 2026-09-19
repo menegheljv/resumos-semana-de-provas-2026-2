@@ -1,24 +1,30 @@
 # Semana de Provas 2026/2
 
-Repositório público colaborativo para revisar as avaliações do período **2026/2 — P4N**.
+Site de estudo da turma para as avaliações do período **2026/2 — P4N** (UVV, Publicidade e Propaganda).
 
-## Acessar a página
+**[Abrir o site →](https://menegheljv.github.io/resumos-semana-de-provas-2026-2/)**
 
-**[Abrir o site de estudos →](https://menegheljv.github.io/resumos-semana-de-provas-2026-2/)**
+## O que tem
 
-## Matérias
-
-| Matéria | Resumo | Apresentação | Quiz |
+| Matéria | Resumo | Revisão relâmpago | Quiz |
 |---|---|---|---|
-| [Marketing](materias/marketing) | [Abrir](materias/marketing/resumo.md) | [Abrir](materias/marketing/apresentacao.md) | [Abrir](materias/marketing/quiz.md) |
-| [Marketing Digital](materias/marketing-digital) | [Abrir](materias/marketing-digital/resumo.md) | [Abrir](materias/marketing-digital/apresentacao.md) | [Abrir](materias/marketing-digital/quiz.md) |
-| [Planejamento e Estratégias de Comunicação Integrada](materias/planejamento-comunicacao-integrada) | [Abrir](materias/planejamento-comunicacao-integrada/resumo.md) | [Abrir](materias/planejamento-comunicacao-integrada/apresentacao.md) | [Abrir](materias/planejamento-comunicacao-integrada/quiz.md) |
+| Marketing | [resumo](materias/marketing/resumo.md) | [cartões](materias/marketing/apresentacao.md) | [20 questões](materias/marketing/quiz.md) |
+| Marketing Digital | [resumo](materias/marketing-digital/resumo.md) | [cartões](materias/marketing-digital/apresentacao.md) | [18 questões](materias/marketing-digital/quiz.md) |
+| Planejamento e Estratégias de Comunicação Integrada | [resumo](materias/planejamento-comunicacao-integrada/resumo.md) | [cartões](materias/planejamento-comunicacao-integrada/apresentacao.md) | [15 questões](materias/planejamento-comunicacao-integrada/quiz.md) |
 
-## Como usar
+Além disso, a **Biblioteca da turma**: uma pasta do Google Drive onde cada aluno sobe seus próprios resumos. O botão está na página inicial do site.
 
-1. Leia o resumo da matéria.
-2. Revise os slides da apresentação.
-3. Responda ao quiz sem consultar as respostas.
-4. Registre dúvidas e correções nas issues ou em um pull request.
+## Como o site é gerado
 
-> **Status:** estrutura inicial criada. O conteúdo final deve ser conferido com os materiais, slides e orientações oficiais da disciplina antes da prova.
+Os textos ficam em `materias/<matéria>/` (`resumo.md`, `apresentacao.md`, `quiz.md`). O script `scripts/build.py` transforma esses arquivos nas páginas de `docs/`. O GitHub Actions roda o script a cada push na `master` e publica o resultado no GitHub Pages. Ou seja: **editar um `.md` já atualiza o site.**
+
+Para rodar localmente (só precisa de Python 3, sem instalar nada):
+
+```bash
+python3 scripts/build.py
+python3 -m http.server 8000 --directory docs
+```
+
+O formato de cada arquivo está descrito em [CONTRIBUTING.md](CONTRIBUTING.md). Os IDs das pastas do Drive ficam em `site.config.json`.
+
+> Conteúdo baseado nos slides e PDFs das disciplinas. Confira sempre com o material do professor.

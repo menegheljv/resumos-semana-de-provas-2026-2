@@ -1,6 +1,6 @@
-name: Enviar um resumo
-description: Compartilhe um resumo, anotação ou correção com a turma.
-title: "[Resumo] "
+name: Corrigir ou sugerir
+description: Aponte um erro ou sugira uma melhoria nos resumos e quizzes. Para enviar o seu próprio resumo, use a Biblioteca da turma (pasta do Drive no site).
+title: "[Correção] "
 labels:
   - contribuicao
 body:
@@ -8,7 +8,6 @@ body:
     id: materia
     attributes:
       label: Matéria
-      description: Escolha onde este conteúdo deve ser publicado.
       options:
         - Marketing
         - Marketing Digital
@@ -16,25 +15,17 @@ body:
     validations:
       required: true
   - type: textarea
-    id: resumo
+    id: o-que
     attributes:
-      label: Seu resumo
-      description: Escreva o conteúdo com suas palavras e destaque os conceitos mais importantes.
-      placeholder: Cole ou escreva seu resumo aqui...
+      label: O que está errado ou o que pode melhorar?
+      description: Diga em qual trecho (resumo, cartão ou número da questão do quiz) e o que você sugere no lugar.
     validations:
       required: true
   - type: textarea
     id: fontes
     attributes:
-      label: Fontes
-      description: Informe a aula, slide, livro ou link usado como referência.
-      placeholder: Ex.: Aula 02 - Inbound e Marketing de Conteúdo Digital
+      label: Fonte
+      description: Aula, slide, página do livro ou link que sustenta a correção.
+      placeholder: Ex.: Conteúdo 06, slide "As 6 etapas"
     validations:
       required: true
-  - type: checkboxes
-    id: revisao
-    attributes:
-      label: Revisão
-      options:
-        - label: Confirmei que não incluí dados pessoais ou material que não possa ser compartilhado publicamente.
-          required: true

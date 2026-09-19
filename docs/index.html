@@ -1,107 +1,21 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Resumos, apresentações e quizzes da semana de provas 2026/2.">
-  <title>Semana de Provas 2026/2</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Resumos, revisão relâmpago e quizzes das três matérias da semana de provas 2026/2, mais uma biblioteca de resumos da turma.">
+<meta name="theme-color" content="#17151a">
+<title>Semana de Provas 2026/2 · P4N</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
 </head>
-<body>
-  <header class="hero">
-    <nav class="nav wrap">
-      <a class="brand" href="#">P4N<span>.</span></a>
-      <a class="github" href="https://github.com/menegheljv/resumos-semana-de-provas-2026-2" target="_blank" rel="noreferrer">Ver no GitHub ↗</a>
-    </nav>
-    <div class="wrap hero-content">
-      <p class="eyebrow">UVV · 2026/2</p>
-      <h1>Semana de<br><em>provas.</em></h1>
-      <p class="intro">Um espaço colaborativo para revisar, testar seus conhecimentos e chegar mais preparado à P4N.</p>
-      <a class="button" href="#materias">Explorar matérias <span>↓</span></a>
-    </div>
-  </header>
-
-  <main id="materias" class="wrap">
-    <div class="section-heading">
-      <p class="eyebrow">Quatro frentes de estudo</p>
-      <h2>Escolha uma matéria<br>e comece a revisar.</h2>
-    </div>
-
-    <section class="subjects">
-      <article class="subject-card accent-orange">
-        <div class="card-number">01</div>
-        <h3><a class="subject-title subject-button" href="marketing.html">Marketing ↗</a></h3>
-        <p>Conceitos, modelos e aplicações fundamentais.</p>
-      </article>
-
-      <article class="subject-card accent-purple">
-        <div class="card-number">02</div>
-        <h3><a class="subject-title subject-button" href="marketing-digital.html">Marketing<br>Digital ↗</a></h3>
-        <p>Canais, jornada do consumidor e métricas.</p>
-      </article>
-
-      <article class="subject-card accent-blue">
-        <div class="card-number">03</div>
-        <h3><a class="subject-title subject-button" href="planejamento-comunicacao-integrada.html">Planejamento e Estratégias de Comunicação Integrada ↗</a></h3>
-        <p>Do diagnóstico ao plano de comunicação.</p>
-      </article>
-
-    </section>
-    <section class="contribute">
-      <p class="eyebrow">Estudo colaborativo</p>
-      <h3>Adicione seu próprio resumo.</h3>
-      <p>O resumo fica salvo neste navegador, sem enviar você para o GitHub.</p>
-      <form id="summary-form">
-        <div class="student-fields">
-          <label for="summary-subject">Matéria</label>
-          <select id="summary-subject" required>
-            <option value="">Selecione uma matéria</option>
-            <option>Marketing</option>
-            <option>Marketing Digital</option>
-            <option>Planejamento e Estratégias de Comunicação Integrada</option>
-          </select>
-          <label for="summary-title">Título</label>
-          <input id="summary-title" required placeholder="Ex.: Revisão da aula 02">
-          <label for="summary-text">Resumo</label>
-          <textarea id="summary-text" required placeholder="Escreva ou cole seu resumo aqui..."></textarea>
-        </div>
-        <button class="button" type="submit">Salvar resumo</button>
-      </form>
-      <div id="saved-summaries"></div>
-    </section>
-  </main>
-
-  <footer class="wrap footer">
-    <span>Feito para estudar junto.</span>
-    <a href="#summary-form">Adicionar resumo</a>
-  </footer>
-  <script>
-    document.querySelectorAll(".subject-card").forEach((card) => {
-      card.querySelectorAll(".tab").forEach((tab) => {
-        tab.addEventListener("click", () => {
-          card.querySelectorAll(".tab, .panel").forEach((element) => element.classList.remove("active"));
-          tab.classList.add("active");
-          card.querySelector("#" + tab.dataset.target).classList.add("active");
-        });
-      });
-      const summaryForm = document.getElementById("summary-form");
-      const savedSummaries = document.getElementById("saved-summaries");
-      const storageKey = "p4n-study-summaries";
-      const escapeHtml = (value) => value.replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[character]));
-      const renderSummaries = () => {
-        const items = JSON.parse(localStorage.getItem(storageKey) || "[]");
-        savedSummaries.innerHTML = items.map((item) => `<article class="saved-summary"><p class="eyebrow">${escapeHtml(item.subject)}</p><h4>${escapeHtml(item.title)}</h4><p>${escapeHtml(item.text)}</p></article>`).join("");
-      };
-      summaryForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-        const items = JSON.parse(localStorage.getItem(storageKey) || "[]");
-        items.push({ subject: document.getElementById("summary-subject").value, title: document.getElementById("summary-title").value, text: document.getElementById("summary-text").value });
-        localStorage.setItem(storageKey, JSON.stringify(items));
-        summaryForm.reset();
-        renderSummaries();
-      });
-      renderSummaries();
-    });
-  </script>
+<body class="">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar"><div class="wrap topbar-in"><a class="brand" href="index.html" aria-label="Início">P4N<span>.</span></a><nav class="toplinks" aria-label="Seções"><a href="#materias">Matérias</a><a href="#como">Como estudar</a><a href="#biblioteca">Biblioteca</a></nav><a class="repo-link" href="https://github.com/menegheljv/resumos-semana-de-provas-2026-2" target="_blank" rel="noreferrer">GitHub ↗</a></div></header>
+<header class="hero hero-home"><div class="wrap hero-in"><p class="eyebrow">UVV · P4N · 2026/2</p><h1>Semana de<br><em>provas.</em></h1><p class="lede">Três matérias, um lugar. Resumo direto, quiz com gabarito na hora e uma pasta para a turma dividir o que estudou.</p><div class="hero-actions"><a class="button big" href="#materias">Começar a revisar</a><a class="button big ghost" href="#biblioteca">Enviar meu resumo</a></div><ul class="stats"><li><strong>3</strong><span>matérias</span></li><li><strong>23</strong><span>blocos de resumo</span></li><li><strong>53</strong><span>questões com gabarito</span></li></ul></div></header>
+<main id="conteudo"><section class="wrap block" id="materias"><div class="section-head"><p class="eyebrow">Matérias</p><h2>Escolha uma e comece.</h2></div><div class="subjects"><article class="subject-card card-pink"><div class="card-top"><span class="card-num">01</span><span class="card-meta">9 blocos · 20 questões</span></div><h3><a href="marketing.html">Marketing</a></h3><p>Valor percebido, comportamento, jornada, marketing social e segmentação B2C e B2B.</p><div class="card-actions"><a class="button" href="marketing.html">Ler resumo</a><a class="button ghost" href="quiz-marketing.html">Fazer quiz</a></div></article><article class="subject-card card-purple"><div class="card-top"><span class="card-num">02</span><span class="card-meta">10 blocos · 18 questões</span></div><h3><a href="marketing-digital.html">Marketing Digital</a></h3><p>Inbound, SEO, mídia programática, performance, anúncios por rede e gestão de crises.</p><div class="card-actions"><a class="button" href="marketing-digital.html">Ler resumo</a><a class="button ghost" href="quiz-marketing-digital.html">Fazer quiz</a></div></article><article class="subject-card card-blue"><div class="card-top"><span class="card-num">03</span><span class="card-meta">4 blocos · 15 questões</span></div><h3><a href="planejamento-comunicacao-integrada.html">Planejamento e Estratégias de Comunicação Integrada</a></h3><p>Comunicação organizacional integrada, marca, identidade, imagem e reputação.</p><div class="card-actions"><a class="button" href="planejamento-comunicacao-integrada.html">Ler resumo</a><a class="button ghost" href="quiz-planejamento.html">Fazer quiz</a></div></article></div></section><section class="wrap block" id="como"><div class="section-head"><p class="eyebrow">Como estudar</p><h2>Três passos, sem enrolação.</h2></div><ol class="how"><li><span>1</span><div><h3>Leia o resumo</h3><p>Cada matéria tem um resumo curto, com o que costuma cair destacado.</p></div></li><li><span>2</span><div><h3>Teste-se no quiz</h3><p>Respondeu, viu o gabarito na hora, com explicação. Erre aqui, não na prova.</p></div></li><li><span>3</span><div><h3>Complete com a turma</h3><p>Suba seu resumo na biblioteca e use o dos colegas.</p></div></li></ol></section><section class="library" id="biblioteca"><div class="wrap"><div class="section-head"><p class="eyebrow">Biblioteca da turma</p><h2>Estudou? Devolva pra turma.</h2><p>Uma pasta do Google Drive compartilhada, com uma subpasta por matéria. Sobe o seu resumo, baixa o dos colegas. Você precisa de uma conta Google.</p></div><div class="library-grid"><div class="library-side"><a class="button big" href="https://drive.google.com/drive/folders/1ZEse542tBFMzU_K1Bm_n62pYWgQAYsZ6" target="_blank" rel="noreferrer">Enviar meu resumo ↗</a><div class="folder-tiles"><a class="folder-tile tile-pink" href="https://drive.google.com/drive/folders/131g1esGoe6AW1YxuFYuTYadABJnoYcJj" target="_blank" rel="noreferrer"><span class="folder-n">01</span><span class="folder-name">Marketing</span><span class="folder-go">Abrir pasta ↗</span></a><a class="folder-tile tile-purple" href="https://drive.google.com/drive/folders/1onKDBJ_hi4TzuFbXYRFOPw3dtVketZQW" target="_blank" rel="noreferrer"><span class="folder-n">02</span><span class="folder-name">Marketing Digital</span><span class="folder-go">Abrir pasta ↗</span></a><a class="folder-tile tile-blue" href="https://drive.google.com/drive/folders/1TbibQKaL60MU_x0JBr-aHOIeOMPoVsN2" target="_blank" rel="noreferrer"><span class="folder-n">03</span><span class="folder-name">Planejamento</span><span class="folder-go">Abrir pasta ↗</span></a></div><h3>Como enviar</h3><ol class="steps"><li>Abra a pasta da matéria.</li><li>Arraste o arquivo (PDF, Docs, imagem) para dentro.</li><li>Nomeie assim: <code>Tema - Seu nome</code>.</li></ol><h3>Regras rápidas</h3><ul class="rules"><li>Escreva com suas palavras e cite a aula ou o slide.</li><li>Nada de dado pessoal nem prova de outras turmas.</li><li>Apague só o que você mesmo enviou.</li></ul></div><div class="drive-embed"><iframe src="https://drive.google.com/embeddedfolderview?id=1ZEse542tBFMzU_K1Bm_n62pYWgQAYsZ6#grid" title="Pasta do Google Drive com os resumos da turma" loading="lazy"></iframe><p class="embed-note">Se o Google pedir cookies, clique em permitir. Não apareceu? <a href="https://drive.google.com/drive/folders/1ZEse542tBFMzU_K1Bm_n62pYWgQAYsZ6" target="_blank" rel="noreferrer">Abra a pasta direto no Drive ↗</a></p></div></div></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-in"><div><strong>Semana de Provas 2026/2</strong><p>Feito pela turma, para a turma. Conferido com os slides da disciplina. Na dúvida, vale o que o professor disse em aula.</p></div><nav aria-label="Rodapé"><a href="index.html#biblioteca">Biblioteca da turma</a><a href="https://github.com/menegheljv/resumos-semana-de-provas-2026-2/issues/new/choose" target="_blank" rel="noreferrer">Achou um erro?</a><a href="https://github.com/menegheljv/resumos-semana-de-provas-2026-2" target="_blank" rel="noreferrer">Código no GitHub ↗</a></nav></div></footer>
 </body>
 </html>
