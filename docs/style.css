@@ -1,5 +1,5 @@
 /* Semana de Provas 2026/2
-   Home escura. Matérias claras, cada uma com uma cor sólida: verde, azul e laranja.
+   Home escura. Matérias claras, cada uma com uma cor sólida fria: violeta, azul e turquesa, que combinam com o rosa da home.
    Tipografia: só Manrope (títulos, texto e rótulos), via Google Fonts. */
 
 :root {
@@ -13,9 +13,9 @@
   --dark: #0d0b11;
   --cream: #f4f1ea;
 
-  --green: #15803d; --green-soft: #e4f5ea; --green-ink: #0f4d27; --green-bright: #4ade80;
+  --violet: #6d45d0; --violet-soft: #eee8fc; --violet-ink: #3f2a80; --violet-bright: #b79dfb;
   --blue: #1d5fbf; --blue-soft: #e3edfc; --blue-ink: #143d7a; --blue-bright: #7db4f2;
-  --orange: #c2500a; --orange-soft: #fdecdc; --orange-ink: #7a2f05; --orange-bright: #fb923c;
+  --teal: #0f766e; --teal-soft: #dcf3f0; --teal-ink: #0a4a45; --teal-bright: #5eead4;
 
   --pink: #e85d9e; --pink-strong: #c2337c;
 
@@ -27,9 +27,9 @@
 }
 
 /* cor da matéria: --cs sólida, --cb suave, --ci escura, --c brilhante (fundo escuro) */
-.accent-green, .card-green { --cs: var(--green); --cb: var(--green-soft); --ci: var(--green-ink); --c: var(--green-bright); }
+.accent-violet, .card-violet { --cs: var(--violet); --cb: var(--violet-soft); --ci: var(--violet-ink); --c: var(--violet-bright); }
 .accent-blue, .card-blue { --cs: var(--blue); --cb: var(--blue-soft); --ci: var(--blue-ink); --c: var(--blue-bright); }
-.accent-orange, .card-orange { --cs: var(--orange); --cb: var(--orange-soft); --ci: var(--orange-ink); --c: var(--orange-bright); }
+.accent-teal, .card-teal { --cs: var(--teal); --cb: var(--teal-soft); --ci: var(--teal-ink); --c: var(--teal-bright); }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: calc(var(--topbar-h) + 16px); }

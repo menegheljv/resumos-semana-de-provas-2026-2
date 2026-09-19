@@ -22,7 +22,7 @@ SUBJECTS = [
         "page": "marketing.html",
         "quiz_page": "quiz-marketing.html",
         "num": "01",
-        "color": "green",
+        "color": "violet",
         "name": "Marketing",
         "title_html": "Marketing<span class=\"dot\">.</span>",
         "tagline": "Valor percebido, comportamento, jornada, marketing social e segmentação B2C e B2B.",
@@ -44,7 +44,7 @@ SUBJECTS = [
         "page": "planejamento-comunicacao-integrada.html",
         "quiz_page": "quiz-planejamento.html",
         "num": "03",
-        "color": "orange",
+        "color": "teal",
         "name": "Planejamento e Estratégias de Comunicação Integrada",
         "short": "Planejamento",
         "title_html": "Planejamento<br><em>integrado.</em>",
@@ -324,7 +324,7 @@ def topbar(links):
         '<header class="topbar"><div class="wrap topbar-in">'
         '<a class="brand" href="index.html" aria-label="Início">P4N<span>.</span></a>'
         f'<nav class="toplinks" aria-label="Seções">{items}</nav>'
-        f'<a class="top-cta" href="{drive_folder_url()}" target="_blank" rel="noreferrer">Enviar resumo ↗</a>'
+        f'<a class="top-cta" href="{drive_folder_url()}" target="_blank" rel="noreferrer">Enviar resumo</a>'
         "</div></header>\n"
     )
 
@@ -362,7 +362,7 @@ def library_block():
         '<section class="library" id="biblioteca"><div class="wrap library-in">'
         '<div class="library-text"><h2>Biblioteca da turma</h2>'
         "<p>Suba seu resumo na pasta do Drive e use os dos colegas. Nomeie como <code>Tema - Seu nome</code>. Precisa de conta Google.</p>"
-        f'<a class="button big" href="{drive_folder_url()}" target="_blank" rel="noreferrer">Enviar meu resumo ↗</a></div>'
+        f'<a class="button big" href="{drive_folder_url()}" target="_blank" rel="noreferrer">Enviar meu resumo</a></div>'
         '<div class="drive-embed">'
         f'<iframe src="{drive_embed_url()}" title="Pasta do Google Drive com os resumos da turma" loading="lazy"></iframe>'
         f'<p class="embed-note"><a href="{drive_folder_url()}" target="_blank" rel="noreferrer">Abrir no Drive ↗</a></p>'
@@ -430,7 +430,7 @@ def build_subject(s, d):
         f'<div class="flash-grid">{render_cards(d["cards"])}</div></section>'
         '<section class="band"><div class="wrap band-in"><h2>Agora teste o que aprendeu.</h2>'
         f'<div class="band-actions"><a class="button big" href="{s["quiz_page"]}">Fazer o quiz · {d["total"]} questões</a>'
-        f'<a class="button big ghost" href="{drive_folder_url(s["slug"])}" target="_blank" rel="noreferrer">Enviar meu resumo ↗</a></div></div></section>'
+        f'<a class="button big ghost" href="{drive_folder_url(s["slug"])}" target="_blank" rel="noreferrer">Enviar meu resumo</a></div></div></section>'
         "</main>\n"
         + footer()
     )
