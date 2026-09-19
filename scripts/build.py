@@ -6,6 +6,7 @@ Uso:  python3 scripts/build.py
 Só usa a biblioteca padrão. O GitHub Actions roda este script antes de publicar,
 então basta editar um .md (resumo, apresentação ou quiz) para o site atualizar.
 """
+import hashlib
 import html
 import json
 import re
@@ -303,6 +304,12 @@ def drive_embed_url():
     return f"https://drive.google.com/embeddedfolderview?id={CFG['drive']['root']}#grid"
 
 
+def asset_version(name):
+    """Muda quando o arquivo muda, para o navegador não usar uma cópia antiga em cache."""
+    data = (DOCS / name).read_bytes().replace(b"\r\n", b"\n")
+    return hashlib.md5(data).hexdigest()[:8]
+
+
 def head(title, desc, body_class=""):
     return (
         "<!doctype html>\n"
@@ -311,8 +318,8 @@ def head(title, desc, body_class=""):
         f'<meta name="description" content="{esc(desc)}">\n'
         '<meta name="theme-color" content="#0d0b11">\n'
         f"<title>{esc(title)}</title>\n{FONTS}\n"
-        '<link rel="stylesheet" href="style.css">\n'
-        '<script src="app.js" defer></script>\n'
+        f'<link rel="stylesheet" href="style.css?v={asset_version("style.css")}">\n'
+        f'<script src="app.js?v={asset_version("app.js")}" defer></script>\n'
         f'</head>\n<body class="{body_class}">\n'
         '<a class="skip" href="#conteudo">Pular para o conteúdo</a>\n'
     )
