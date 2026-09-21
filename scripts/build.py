@@ -289,6 +289,11 @@ FONTS = (
     '<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">'
 )
 
+FAVICON = (
+    '<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\'%3E'
+    '%3Cpath fill=\'%23e85d9e\' d=\'M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17z\'/%3E%3C/svg%3E">'
+)
+
 SPECIAL = ("antes-de-entrar-na-prova", "fontes")
 
 
@@ -317,7 +322,7 @@ def head(title, desc, body_class=""):
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         f'<meta name="description" content="{esc(desc)}">\n'
         '<meta name="theme-color" content="#0d0b11">\n'
-        f"<title>{esc(title)}</title>\n{FONTS}\n"
+        f"<title>{esc(title)}</title>\n{FAVICON}\n{FONTS}\n"
         f'<link rel="stylesheet" href="style.css?v={asset_version("style.css")}">\n'
         f'<script src="app.js?v={asset_version("app.js")}" defer></script>\n'
         f'</head>\n<body class="{body_class}">\n'
