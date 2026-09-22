@@ -49,7 +49,7 @@ SUBJECTS = [
         "name": "Planejamento e Estratégias de Comunicação Integrada",
         "short": "Planejamento",
         "title_html": "Planejamento<br><em>integrado.</em>",
-        "tagline": "Comunicação organizacional integrada, marca, identidade, imagem e reputação.",
+        "tagline": "Planejamento, marca, posicionamento, imagem, reputação, investimento, eventos e crise.",
         "prof": "",
     },
 ]
