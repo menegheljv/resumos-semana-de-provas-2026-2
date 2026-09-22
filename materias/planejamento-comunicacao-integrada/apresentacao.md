@@ -1,6 +1,6 @@
 # Planejamento e Estratégias de Comunicação Integrada — Revisão relâmpago
 
-Sete cartões, um por minuto. Se travar, volte ao resumo.
+Catorze cartões, um por minuto. Se travar, volte ao resumo.
 
 ## Slide 1 — Comunicação organizacional
 
@@ -48,3 +48,50 @@ Sete cartões, um por minuto. Se travar, volte ao resumo.
 - Desempenho, produtos e serviços, inovação.
 - Ambiente de trabalho, governança, cidadania.
 - Liderança.
+
+## Slide 8 — Planejamento x plano
+
+- Planejamento é processo (pensar, prever, definir). Plano é documento (materializa: como, quando, por quem).
+- 3 níveis: estratégico (longo prazo, toda a organização), tático (setor, médio prazo), operacional (rotina, curto prazo).
+- Processo de 12 etapas de Kunsch: da realidade situacional à avaliação de resultados — não é linear, se revisa sempre.
+- Objetivo (o que quero), meta (quantificada e com prazo), estratégia (caminho), ação (execução).
+
+## Slide 9 — Missão, visão, valores
+
+- Missão: razão de ser. Visão: posicionamento almejado no tempo. Valores: regras e crenças que norteiam.
+- Passo a passo de Lupetti: missão/visão/valores → concorrência → SWOT → diagnóstico → personas → posicionamento → estratégias → ações → orçamento.
+- Campbell: missão é propósito; estratégia é vantagem competitiva.
+
+## Slide 10 — Posicionamento
+
+- Erro clássico: achar que tem posicionamento sem ter. Produto sem posicionamento = vendedor não justifica a compra.
+- Ocupar posição única na mente do cliente, ser lembrado no meio de 10 mil imagens.
+- 7 possibilidades: atributo, benefício, uso, usuário, concorrente, categoria, qualidade/preço.
+- Armadilha: posicionar só por preço.
+
+## Slide 11 — Gestão de imagem e sociedade midiatizada
+
+- Sociedade midiatizada (Sodré): realidade é o que circula na internet. Comunicação em rede (Cardoso) substitui comunicação de massa.
+- Licenças para operação: tribunal jurídico (leis) x tribunal da opinião pública (percepções).
+- Mentira tem perna curta: posicionamento precisa ser verdade factual.
+- Bueno: imagem se sente na pele; reputação se sente na alma.
+
+## Slide 12 — Investimento em comunicação
+
+- Torquato: comunicação é tratada como despesa, deveria ser investimento. Retorno médio de 186% (Jorge, 2000).
+- Organização tradicional (centralizada, descendente) x organização comunicante (aberta, flexível, enérgica).
+- 6 métodos de orçamento CIM: % vendas, % lucro, objetivo e tarefa (o melhor), paridade competitiva, máximo possível, balanço.
+
+## Slide 13 — Eventos
+
+- Etapas: iniciação → diagnose/SWOT → operacionalização → controle → fechamento, com feedback.
+- Diagnóstico = conhecimento do presente; prognóstico = conhecimento projetado do futuro.
+- Gestão integrada: etapa estratégica (diagnosticar, mapear públicos, SWOT) e etapa tática/operacional (implementar, executar controles), com fluxo de informação nos dois sentidos.
+
+## Slide 14 — Comunicação de crise
+
+- Crise: algo negativo que escapa ao controle e ganha visibilidade (Forni/Mitroff). Nenhuma empresa é imune.
+- Primeira reação: assumir o controle da informação, antes que a mídia tome a iniciativa.
+- Caso Samarco: comunicação omissa + campanha defensiva = crise pior.
+- Comitê de crise (alta gestão + jurídico + comunicação + setor envolvido) mapeia riscos e prepara textos-padrão.
+- Timing da informação tem validade: notícia de hoje pode não valer amanhã.
