@@ -1,5 +1,5 @@
 /* Semana de Provas 2026/2
-   Home escura. Matérias claras, cada uma com uma cor sólida fria: violeta, azul e turquesa, que combinam com o rosa da home.
+   Home escura. Matérias claras, cada uma com uma cor sólida fria: violeta, azul, turquesa e ciano, que combinam com o rosa da home.
    Tipografia: só Manrope (títulos, texto e rótulos), via Google Fonts. */
 
 :root {
@@ -16,6 +16,7 @@
   --violet: #6d45d0; --violet-soft: #eee8fc; --violet-ink: #3f2a80; --violet-bright: #b79dfb;
   --blue: #1d5fbf; --blue-soft: #e3edfc; --blue-ink: #143d7a; --blue-bright: #7db4f2;
   --teal: #0f766e; --teal-soft: #dcf3f0; --teal-ink: #0a4a45; --teal-bright: #5eead4;
+  --cyan: #0b79a6; --cyan-soft: #def2fa; --cyan-ink: #0a4962; --cyan-bright: #67d4f0;
 
   --pink: #e85d9e; --pink-strong: #c2337c;
 
@@ -30,7 +31,8 @@
 .accent-violet, .card-violet { --cs: var(--violet); --cb: var(--violet-soft); --ci: var(--violet-ink); --c: var(--violet-bright); --cl: #9a78f2; --cd: #43269a; }
 .accent-blue, .card-blue { --cs: var(--blue); --cb: var(--blue-soft); --ci: var(--blue-ink); --c: var(--blue-bright); --cl: #5b9bf5; --cd: #103a7d; }
 .accent-teal, .card-teal { --cs: var(--teal); --cb: var(--teal-soft); --ci: var(--teal-ink); --c: var(--teal-bright); --cl: #34c4b5; --cd: #084640; }
-.accent-violet, .accent-blue, .accent-teal, .card-violet, .card-blue, .card-teal {
+.accent-cyan, .card-cyan { --cs: var(--cyan); --cb: var(--cyan-soft); --ci: var(--cyan-ink); --c: var(--cyan-bright); --cl: #38bde0; --cd: #08425a; }
+.accent-violet, .accent-blue, .accent-teal, .accent-cyan, .card-violet, .card-blue, .card-teal, .card-cyan {
   /* cor com luz: brilho no canto superior direito sobre um degradê */
   --cg: radial-gradient(75% 120% at 100% 0%, var(--cl) 0%, transparent 62%), linear-gradient(135deg, var(--cs) 0%, var(--cd) 100%);
 }
@@ -257,7 +259,7 @@ blockquote { margin: 0 0 1.4em; padding: 4px 0 4px 18px; color: var(--ink-2); bo
 @media (min-width: 960px) {
   .hero-in { padding: 110px 0 80px; }
   .hero-sub .hero-in { padding: 72px 0 56px; }
-  .subjects { grid-template-columns: repeat(3, 1fr); }
+  .subjects { grid-template-columns: repeat(2, 1fr); }
   .flash-grid { grid-template-columns: repeat(4, 1fr); }
   .library-in { grid-template-columns: 380px 1fr; gap: 48px; align-items: start; }
   .drive-embed iframe { height: 520px; }
