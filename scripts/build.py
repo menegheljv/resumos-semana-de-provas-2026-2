@@ -52,6 +52,19 @@ SUBJECTS = [
         "tagline": "Planejamento, marca, posicionamento, imagem, reputação, investimento, eventos e crise.",
         "prof": "",
     },
+    {
+        "slug": "estudos-socioantropologicos",
+        "page": "estudos-socioantropologicos.html",
+        "quiz_page": "quiz-socioantropologicos.html",
+        "num": "04",
+        "color": "cyan",
+        "name": "Estudos Socioantropológicos",
+        "short": "Estudos Socioantropológicos",
+        "title_html": "Estudos<br><em>socioantro&shy;pológicos.</em>",
+        "quiz_title_html": "Estudos<br><em>quiz.</em>",
+        "tagline": "Contrato social, cultura, os clássicos da Sociologia, Bourdieu, Foucault, Escola de Chicago e sociedade digital.",
+        "prof": "Prof. Pablo Ornelas Rosa",
+    },
 ]
 
 
@@ -302,7 +315,7 @@ def strip_num(title):
 
 
 def drive_folder_url(key="root"):
-    return f"https://drive.google.com/drive/folders/{CFG['drive'][key]}"
+    return f"https://drive.google.com/drive/folders/{CFG['drive'].get(key, CFG['drive']['root'])}"
 
 
 def drive_embed_url():
@@ -393,12 +406,12 @@ def build_index(data):
         for s in SUBJECTS
     )
     page = (
-        head("Semana de Provas 2026/2 · P4N", "Resumos, revisão relâmpago e quizzes das três matérias da semana de provas 2026/2, mais uma biblioteca de resumos da turma.", "page-home")
+        head("Semana de Provas 2026/2 · P4N", "Resumos, revisão relâmpago e quizzes das quatro matérias da semana de provas 2026/2, mais uma biblioteca de resumos da turma.", "page-home")
         + topbar([("#materias", "Matérias"), ("#biblioteca", "Biblioteca")])
         + '<header class="hero hero-home"><div class="wrap hero-in">'
         '<p class="eyebrow">UVV · P4N · 2026/2</p>'
         "<h1>Semana de<br><em>provas.</em></h1>"
-        '<p class="lede">Resumo, revisão e quiz das três matérias.</p>'
+        '<p class="lede">Resumo, revisão e quiz das quatro matérias.</p>'
         '<div class="hero-actions"><a class="button big" href="#materias">Começar a revisar</a></div>'
         "</div></header>\n"
         '<main id="conteudo">'
@@ -456,7 +469,7 @@ def build_quiz(s, d):
         head(f"Quiz de {short} · Semana de Provas", f"Quiz de {s['name']} com gabarito e explicação na hora.", f"page-light accent-{color}")
         + topbar([(s["page"], "Voltar ao resumo")])
         + '<header class="hero hero-sub"><div class="wrap hero-in">'
-        f'<h1>{esc(short)}<br><em>quiz.</em></h1>'
+        f'<h1>{s.get("quiz_title_html") or esc(short) + "<br><em>quiz.</em>"}</h1>'
         f'<p class="lede">{inline(d["quiz_lead"])}</p></div></header>\n'
         '<main id="conteudo" class="wrap quiz-wrap">'
         '<div class="quiz-bar" role="status" aria-live="polite"><div class="quiz-stats">'
