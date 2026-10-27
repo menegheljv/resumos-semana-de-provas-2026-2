@@ -216,13 +216,16 @@ def parse_quiz(md):
             continue
         m = re.match(r"^###\s+(\d+)\.\s+(.*)$", line)
         if m:
-            q = {"n": int(m.group(1)), "text": m.group(2).strip(), "options": [], "answer": "", "why": ""}
+            q = {"n": int(m.group(1)), "text": m.group(2).strip(), "body": [], "options": [], "answer": "", "why": ""}
             if group is None:
                 group = {"title": "", "questions": []}
                 groups.append(group)
             group["questions"].append(q)
             continue
         if q is None:
+            continue
+        if line.strip() and not q["options"] and not q["answer"] and not re.match(r"^([A-D])\.\s+", line):
+            q["body"].append(line.strip())
             continue
         m = re.match(r"^([A-D])\.\s+(.*)$", line)
         if m:
@@ -245,6 +248,7 @@ def render_quiz(groups, total, slug):
         if g["title"]:
             out.append(f'<h2 class="quiz-group">{inline(g["title"])}</h2>')
         for q in g["questions"]:
+            body = ('<div class="q-body">' + "".join(f"<p>{inline(x)}</p>" for x in q["body"]) + "</div>") if q["body"] else ""
             opts = "".join(
                 f'<button type="button" class="option" data-key="{k}"><span class="key">{k}</span><span class="opt-text">{inline(t)}</span></button>'
                 for k, t in q["options"]
@@ -253,6 +257,7 @@ def render_quiz(groups, total, slug):
                 f'<article class="question" id="q{q["n"]}" data-answer="{q["answer"]}">'
                 f'<p class="q-num">Questão {q["n"]} de {total}</p>'
                 f'<h3>{inline(q["text"])}</h3>'
+                f'{body}'
                 f'<div class="options">{opts}</div>'
                 f'<div class="explain" hidden><p><strong>Gabarito: {q["answer"]}.</strong> {inline(q["why"])}</p></div>'
                 f"</article>"

@@ -320,3 +320,5 @@ blockquote { margin: 0 0 1.4em; padding: 4px 0 4px 18px; color: var(--ink-2); bo
   .tbl-num td:nth-child(2) { margin-bottom: 2px; color: var(--ink); font-size: 16px; font-weight: 800; }
   .tbl-num td:nth-child(2)::before { display: none; }
 }
+.q-body { margin: 0 0 16px; }
+.q-body p { margin: 8px 0; }
