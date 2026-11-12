@@ -26,7 +26,7 @@ SUBJECTS = [
         "color": "blue",
         "name": "Marketing",
         "title_html": "Marketing<span class=\"dot\">.</span>",
-        "tagline": "Valor percebido, jornada, segmentação, produto, preço, comunicação integrada e branding (provas do 1º e do 2º bimestre).",
+        "tagline": "Produto, preço, promoção e comunicação integrada e branding (prova do 2º bimestre, 24/11).",
         "prof": "Prof. Neil Palacios Jr.",
     },
     {
