@@ -26,7 +26,7 @@ SUBJECTS = [
         "color": "blue",
         "name": "Marketing",
         "title_html": "Marketing<span class=\"dot\">.</span>",
-        "tagline": "Valor percebido, comportamento, jornada, marketing social e segmentação B2C e B2B.",
+        "tagline": "Valor percebido, jornada, segmentação, produto, preço, comunicação integrada e branding (provas do 1º e do 2º bimestre).",
         "prof": "Prof. Neil Palacios Jr.",
     },
     {
